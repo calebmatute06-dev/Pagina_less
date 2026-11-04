@@ -1,0 +1,40 @@
+.card {
+    background: @blanco;
+    border: @borde;
+    box-shadow: 6px 6px 0 @tinta;
+    transition: transform 0.15s, box-shadow 0.15s;
+
+    &:hover {
+        transform: translate(-3px, -3px);
+        box-shadow: 9px 9px 0 @acento;
+    }
+
+    img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-bottom: @borde;
+    }
+
+    .card__body {
+        padding: 18px;
+
+        h3 {
+            margin: 0 0 8px;
+            font-size: 1.3rem;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    @media (max-width: @movil) {
+        grid-template-columns: 1fr;
+    }
+}

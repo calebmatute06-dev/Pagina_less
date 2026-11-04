@@ -1,0 +1,50 @@
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: @tinta;
+  background: @papel;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1.15;
+}
+
+img { max-width: 100%; display: block; }
+
+.container {
+  max-width: @ancho;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section { padding: 70px 0; }
+
+.section-title {
+  display: inline-block;
+  margin: 0 0 36px;
+  font-size: 2.2rem;
+  border-bottom: 6px solid @amarillo;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 26px;
+  background: @tinta;
+  color: @papel;
+  border: @borde;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 4px 4px 0 @acento;
+  transition: transform 0.15s, box-shadow 0.15s;
+
+  &:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 @acento;
+  }
+}
