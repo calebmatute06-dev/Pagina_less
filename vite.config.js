@@ -2,5 +2,5 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   appType: 'mpa',
-  base: '/Pagina_less/',
+  base: './',
 });
